@@ -1,0 +1,73 @@
+// Flex System
+.wrap {
+  flex-wrap: wrap;
+}
+.nowrap {
+  flex-wrap: nowrap;
+}
+.cnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fdr {
+  flex-direction: row;
+}
+.fdrr {
+  flex-direction: row-reverse;
+}
+.fdc {
+  flex-direction: column;
+}
+.fdcr {
+  flex-direction: column-reverse;
+}
+.ais {
+  align-items: flex-start;
+}
+.aic {
+  align-items: center;
+}
+.aie {
+  align-items: flex-end;
+}
+.jcs {
+  justify-content: flex-start;
+}
+.jcc {
+  justify-content: center;
+}
+.jce {
+  justify-content: flex-end;
+}
+.jcsb {
+  justify-content: space-between;
+}
+.jcsa {
+  justify-content: space-around;
+}
+.jcse {
+  justify-content: space-evenly;
+}
+.flex-auto {
+  flex: 0 0 auto;
+}
+.flex-1 {
+  flex: 1 0 0;
+}
+.flex-25 {
+  flex: 0 0 25%;
+}
+.flex-50 {
+  flex: 0 0 50%;
+}
+.flex-75 {
+  flex: 0 0 75%;
+}
+
+// Gap
+@for $i from 0 through 50 {
+  .gap-#{$i} {
+    gap: var(--size-#{$i});
+  }
+}
