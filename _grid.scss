@@ -15,11 +15,12 @@
   flex-wrap: wrap;
   margin-right: calc(-1 * $gutter/2);
   margin-left: calc(-1 * $gutter/2);
-  .box,
-  [class*="box-"] {
-    flex: 1 0 0;
+  > * {
     flex-shrink: 0;
     width: 100%;
+  }
+  .box,
+  [class*="box-"] {
     padding-right: calc($gutter/2);
     padding-left: calc($gutter/2);
   }
