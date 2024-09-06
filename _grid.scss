@@ -26,6 +26,10 @@
   }
 }
 
+.box {
+  flex: 1 0 0;
+}
+
 // Box Classes Definition
 @for $i from 1 through 12 {
   .box-#{$i} {
